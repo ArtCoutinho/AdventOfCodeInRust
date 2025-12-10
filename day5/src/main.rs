@@ -98,7 +98,7 @@ fn reduce_intervals(intervals: &Vec<(u64, u64)>) -> Vec<(u64, u64)>{
         for (start2, end2) in intervals.iter(){
             if start2 == start && end2 == end{ //equal
                 continue;
-            }
+            }   
             else if start2 >= start && end2 <= end{ //interval1 includes interval2
                 continue;
             }
